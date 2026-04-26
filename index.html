@@ -19,7 +19,34 @@
     .about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}.about-text{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:40px;box-shadow:var(--shadow);position:sticky;top:105px}.about-text h2{font-family:Cormorant Garamond,serif;font-size:62px;line-height:.95;margin:0 0 20px}.about-text p{color:#4d5868}.about-images{display:grid;gap:22px}.about-images img{border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #fff}.press-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px}.press-card img{box-shadow:none;border-radius:18px}
     .directions{background:#fff}.direction-card{display:grid;grid-template-columns:1.1fr .9fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#fff}.direction-card img{height:100%;width:100%;object-fit:cover}.direction-copy{padding:48px}.direction-copy h2{font-family:Cormorant Garamond,serif;font-size:62px;line-height:.95;margin:0 0 18px}.address{font-size:22px;font-weight:700;margin:24px 0;color:var(--ink)}.maps{display:inline-flex;align-items:center;gap:10px;background:var(--blue);color:#fff;padding:16px 22px;border-radius:999px;font-weight:800}.foot{padding:42px 22px;background:var(--ink);color:#fff;text-align:center}.foot strong{font-family:Cormorant Garamond,serif;font-size:32px}.foot p{margin:6px 0 0;color:rgba(255,255,255,.72)}
     @media(max-width:900px){.hero-grid,.about-grid,.direction-card{grid-template-columns:1fr}.hero-card img{height:520px}.section-head{display:block}.section-head p{margin-top:14px}.plate-slide{grid-template-columns:1fr;flex-basis:86vw}.plate-slide img{height:390px}.about-text{position:static}.direction-card img{height:340px}} @media(max-width:560px){.brand div:last-child{font-size:13px}.hero{padding-top:110px}.hero-card img{height:420px}.plate-slide{flex-basis:88vw}.plate-slide img{height:330px}.plate-info{padding:26px}.plate-info h3{font-size:36px}.notice{grid-template-columns:1fr}.notice .seal{display:none}.about-text,.direction-copy{padding:28px}.drawer a{font-size:26px}}
-  </style>
+    .actions {
+  margin-top: 15px;
+}
+
+.call-button {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 14px 28px;
+  background: #111;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.call-button:hover {
+  background: #333;
+}
+
+.maps {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #0b5ed7;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+}  </style>
 </head>
 <body>
   <nav class="nav">
@@ -116,11 +143,22 @@
         <div class="eyebrow">Wegbeschreibung</div>
         <h2>Besuchen Sie uns.</h2>
         <p>Sie finden uns in Hamburg-Tonndorf. Tippen Sie auf den Button, um die Route direkt in Google Maps zu öffnen.</p>
-        <div class="address">Tonndorfer Hauptstraße 76<br>22045 Hamburg</div>040/66 38 30
-        <a class="maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Tonndorfer%20Hauptstra%C3%9Fe%2076%2022045%20Hamburg">Route in Google Maps öffnen</a>
-      </div>
-    </div>
-  </section>
+        <div<div class="address">
+  Tonndorfer Hauptstraße 76<br>
+  22045 Hamburg
+</div>
+
+<div class="actions">
+  <a href="tel:+4940663830" class="call-button">
+    📞 Jetzt anrufen
+  </a>
+
+  <a class="maps" target="_blank" rel="noopener"
+  href="https://www.google.com/maps/search/?api=1&query=Tonndorfer+Hauptstraße+76+Hamburg">
+    📍 Route in Google Maps öffnen
+  </a>
+</div>    </div>
+ </section>
 
   <footer class="foot">
     <strong>Fisch Eichrodt</strong>
